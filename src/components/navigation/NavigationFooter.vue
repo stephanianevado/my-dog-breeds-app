@@ -8,7 +8,7 @@ import IconLinkedin from '../icons/IconLinkedin.vue'
 </script>
 
 <template>
-  <footer class="2xl:mx-96 md:mx-20 mx-4 my-6 flex flex-col space-y-4">
+  <footer class="2xl:mx-[640px] md:mx-20 mx-4 my-6 flex flex-col space-y-4">
     <IconLine />
     <div class="space-y-2 text-sm">
       <p>Copyright © {{ getCurrentYear() }} Stephania Nevado</p>

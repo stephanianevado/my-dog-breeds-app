@@ -12,7 +12,7 @@ import NavigationMenu from './NavigationMenu.vue'
   <div>
     <NavigationMenu v-if="open" :open="open" :close="closeMenu" />
 
-    <header class="2xl:mx-96 md:mx-20 mx-4 my-6">
+    <header class="2xl:mx-[640px] md:mx-20 mx-4 my-6">
       <div class="flex md:flex-row flex-col md:justify-between items-center">
         <div class="md:flex hidden">
           <RouterLink to="/">
