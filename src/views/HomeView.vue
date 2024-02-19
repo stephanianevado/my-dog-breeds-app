@@ -1,5 +1,5 @@
 <script setup>
-import IcosahedronAnimation from '../components/animations/IcosahedronAnimation.vue'
+import IcosahedronAnimation from '../components/animation/IcosahedronAnimation.vue'
 import LinkButton from '../components/common/linkButton/LinkButton.vue'
 import Dash from '../components/icons/IconDash.vue'
 import IconEmail from '../components/icons/IconEmail.vue'

@@ -24,7 +24,7 @@ import NavigationMenu from './NavigationMenu.vue'
               height="34" />
           </RouterLink>
         </div>
-        <div class="md:flex hidden">
+        <div class="fade-in-down md:flex hidden">
           <HeaderItems />
         </div>
         <div class="md:hidden flex self-end">
@@ -33,7 +33,7 @@ import NavigationMenu from './NavigationMenu.vue'
         <div
           v-for="item in items"
           :key="item.id"
-          class="md:flex hidden text-lg">
+          class="fade-in-down md:flex hidden text-lg">
           <LinkButton
             :href="item.href"
             :icon="item.icon"

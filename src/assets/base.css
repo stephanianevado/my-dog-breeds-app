@@ -8,3 +8,80 @@
     @apply text-stone-950;
   }
 }
+
+/* Custom animations */
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.fade-in-right {
+  animation: fadeInRight 200ms ease-out;
+}
+
+.fade-in-down {
+  animation: fadeInDown 200ms ease-out;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 200ms ease-out;
+}
+
+.fade-in-up {
+  animation: fadeInUp 200ms ease-out;
+}
+
+.fade-out-right {
+  animation: fadeOutRight 200ms ease-out;
+}

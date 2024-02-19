@@ -8,7 +8,7 @@ import HeaderItems from './HeaderItems.vue'
 </script>
 
 <template>
-  <header class="absolute top-0 w-full h-full bg-white text-lg">
+  <header class="absolute top-0 w-full h-full bg-white text-lg z-10">
     <div class="mx-4 my-6 flex flex-col space-y-14">
       <div class="md:hidden flex flex-row justify-between items-center">
         <RouterLink to="/">
@@ -23,7 +23,9 @@ import HeaderItems from './HeaderItems.vue'
           <IconButton :icon="IconClose" :onClick="close" />
         </div>
       </div>
-      <HeaderItems />
+      <div class="fade-in-left">
+        <HeaderItems />
+      </div>
       <div v-for="item in items" :key="item.id">
         <LinkButton
           :href="item.href"

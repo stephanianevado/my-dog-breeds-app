@@ -1,5 +1,9 @@
+<script setup>
+import Title from '../components/Title.vue';
+</script>
+
 <template>
   <div>
-    <h1>This is a dogs page</h1>
+    <Title header="Because everyday is a Dog day." subHeader="Total" />
   </div>
 </template>
