@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <div
-    class="flex flex-wrap md:justify-center justify-start text-lg text-gray-400 font-semibold">
+    class="flex flex-wrap md:justify-center justify-start text-lg text-gray-500 font-semibold">
     <RouterLink
       v-for="item in items"
       :key="item.id"

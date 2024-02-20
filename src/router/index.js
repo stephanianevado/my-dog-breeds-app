@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import DogView from '../views/DogView.vue'
 import DogsView from '../views/DogsView.vue'
+import HomeView from '../views/HomeView.vue'
 
 Vue.use(VueRouter)
 
 const router = new VueRouter({
   mode: 'history',
-  base: import.meta.env.BASE_URL,
   routes: [
     {
       path: '/',
@@ -18,6 +18,11 @@ const router = new VueRouter({
       path: '/dogs',
       name: 'dogs',
       component: DogsView,
+    },
+    {
+      path: `/dog/:id`,
+      name: 'dog',
+      component: DogView,
     },
   ],
 })
