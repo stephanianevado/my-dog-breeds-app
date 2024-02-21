@@ -3,12 +3,11 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-const API_KEY = import.meta.env.DOG_API_KEY
 const URL = 'https://api.thedogapi.com/v1'
 
 const headers = new Headers({
   'Content-Type': 'application/json',
-  'x-api-key': API_KEY,
+  'x-api-key': import.meta.env.DOG_API_KEY,
 })
 
 export default new Vuex.Store({

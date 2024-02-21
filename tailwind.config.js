@@ -14,6 +14,7 @@ export default {
         gray: {
           50: 'rgba(0, 0, 0, 0.04)',
         },
+        modal: 'rgba(0, 0, 0, 0.5)',
         hoverAlternative: '#020C1BCC',
         hoverStandard: '#0000001A',
       },

@@ -20,7 +20,7 @@ const router = new VueRouter({
       component: DogsView,
     },
     {
-      path: `/dog/:id`,
+      path: `/dog/:breed/:id`,
       name: 'dog',
       component: DogView,
     },
