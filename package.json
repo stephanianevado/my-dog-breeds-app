@@ -1,7 +1,6 @@
 {
   "name": "my-dog-breeds-app",
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
     "build": "vite build",
