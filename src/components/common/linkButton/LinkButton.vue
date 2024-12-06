@@ -37,15 +37,15 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'LinkButton',
-  props: {
-    mode: String,
-    color: String,
-    icon: Object,
-    href: String,
-    iconPosition: String,
-  },
+<script setup lang="ts">
+
+type Props = {
+  mode: 'alternative' | 'standard',
+  color: string,
+  icon: object,
+  href: string,
+  iconPosition: 'left' | 'right',
 }
+defineProps<Props>()
 </script>
+

@@ -1,7 +1,4 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-Vue.use(Vuex)
+import { createStore } from 'vuex'
 
 const URL = 'https://api.thedogapi.com/v1'
 
@@ -10,7 +7,7 @@ const headers = new Headers({
   'x-api-key': import.meta.env.DOG_API_KEY,
 })
 
-export default new Vuex.Store({
+const store = createStore({
   state: {
     dogBreeds: [],
     currentBreed: null,
@@ -84,3 +81,5 @@ export default new Vuex.Store({
     },
   },
 })
+
+export default store

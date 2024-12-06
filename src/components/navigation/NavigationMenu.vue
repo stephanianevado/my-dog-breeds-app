@@ -31,7 +31,6 @@ import HeaderItems from './HeaderItems.vue'
           :href="item.href"
           :icon="item.icon"
           color="black"
-          hover="hoverStandard"
           mode="standard"
           iconPosition="right">
           {{ item.text }}
